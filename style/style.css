@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f1c38), to(#3154a0));
+  background: linear-gradient(#0f1c38, #3154a0);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px 40px;
+  position: absolute;
+  z-index: 999999;
+}
+
+header .logo {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: #5c0606;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px 40px;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: firebrick;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+header ul li a:hover {
+  background-color: #ebb010;
+}
+
+header ul li a.active {
+  background-color: #ebb010;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  z-index: 11111;
+  background: -webkit-gradient(linear, left bottom, left top, from(#132854), to(transparent));
+  background: linear-gradient(to top, #132854, transparent);
+}
+
+.hero #stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero #moon {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hero #mountains_behind {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 11;
+}
+
+.hero #mountains_front {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 111;
+}
+
+.hero #text {
+  position: absolute;
+  z-index: 12;
+  color: #fafcff;
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  right: 8%;
+}
+
+.hero #explore {
+  position: absolute;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  z-index: 12;
+  padding: 12px 20px;
+  background-color: #021938;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #e6b251;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 100px;
+  margin-top: 100px;
+}
+
+.paragraph .title {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: #a03434;
+}
+
+.paragraph .text {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #cca34b;
+}
+/*# sourceMappingURL=style.css.map */
